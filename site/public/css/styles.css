@@ -376,7 +376,7 @@ a.map__placeholder:hover .textlink { color: var(--red-deep); }
   body.nav-open .nav__links { transform: translateX(0); visibility: visible; }
   .nav__links a, .site-header.is-solid .nav__links a { color:#fff; font-size:1rem; }
   .nav .btn { display:none; }
-  .nav-scrim { display:block; position:fixed; inset:0; background:rgba(20,13,8,.5); z-index:110; opacity:0; pointer-events:none; transition:opacity .35s ease; }
+  .nav-scrim { display:block; position:fixed; inset:0; background:rgba(20,13,8,.5); z-index:90; opacity:0; pointer-events:none; transition:opacity .35s ease; }
   body.nav-open .nav-scrim { opacity:1; pointer-events:auto; }
   .cards { grid-template-columns: 1fr; max-width: 420px; margin-inline:auto; }
   .split { grid-template-columns: 1fr; }
