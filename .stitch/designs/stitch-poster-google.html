@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qahwah Drip Review Poster</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Nunito+Sans:wght@400;600;700&amp;family=Public+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Playfair Display for headings as requested -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        qahwah: {
+                            red: "#C4202C",
+                            brass: "#B8924A",
+                            green: "#2E6B43",
+                            cream: "#F6F1E8",
+                            linen: "#FBF8F2",
+                            walnut: "#5A3E29",
+                            camel: "#B98A5E",
+                            ink: "#2A211B"
+                        }
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Playfair Display", "serif"], // Overriding Public Sans as per prompt instruction for headings
+                        "display": ["Playfair Display", "serif"],
+                        "body": ["Nunito Sans", "sans-serif"],
+                        "label": ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom motif borders and utilities */
+        .brass-hairline {
+            border-bottom: 1px solid #B8924A;
+        }
+        
+        .marble-texture {
+            /* Simulated subtle marble texture via gradient overlay */
+            background-color: #F6F1E8;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(255,255,255,0.4) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(210,200,190,0.1) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(246, 241, 232, 1) 0%, rgba(251, 248, 242, 1) 100%);
+        }
+
+        /* Portrait Aspect Ratio for Print (roughly 8.5x11 or A4) */
+        .poster-container {
+            aspect-ratio: 1 / 1.414; /* A-series aspect ratio */
+            max-width: 800px; /* Viewport constraint for rendering */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+            .poster-container {
+                max-width: 100%;
+                height: 100vh;
+                aspect-ratio: auto;
+                box-shadow: none;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 md:p-8">
+<!-- Poster Canvas -->
+<main class="poster-container marble-texture w-full bg-qahwah-cream shadow-2xl flex flex-col relative" id="print-area">
+<!-- Corner Ornaments (Abstract 8-point star hints) -->
+<div class="absolute top-8 left-8 w-16 h-16 border-t border-l border-qahwah-brass/40 opacity-70"></div>
+<div class="absolute top-8 right-8 w-16 h-16 border-t border-r border-qahwah-brass/40 opacity-70"></div>
+<div class="absolute bottom-8 left-8 w-16 h-16 border-b border-l border-qahwah-brass/40 opacity-70"></div>
+<div class="absolute bottom-8 right-8 w-16 h-16 border-b border-r border-qahwah-brass/40 opacity-70"></div>
+<!-- Content Inner Container with generous whitespace -->
+<div class="flex-1 flex flex-col items-center p-12 md:p-20 text-center h-full">
+<!-- Top: Logo / Brand Name -->
+<header class="mb-16 mt-8 flex flex-col items-center">
+<!-- Iconic mihrab/arch motif frame for logo hint -->
+<div class="w-16 h-20 border-t-2 border-qahwah-red/20 rounded-t-full mb-4 flex items-end justify-center pb-2">
+<span class="material-symbols-outlined text-qahwah-red text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">
+                        local_cafe
+                    </span>
+</div>
+<h1 class="font-headline font-bold text-4xl md:text-5xl tracking-tighter text-qahwah-red uppercase">Qahwah Drip</h1>
+<div class="w-24 h-px bg-qahwah-brass mt-6 opacity-60"></div>
+</header>
+<!-- Section 1 & 2: Heading, Stars, Subtitle -->
+<section class="flex flex-col items-center mb-16 max-w-md">
+<h2 class="font-headline italic font-bold text-5xl md:text-6xl text-qahwah-ink mb-6 leading-tight">
+                    Loved Your Visit?
+                </h2>
+<!-- Five Gold Stars -->
+<div class="flex gap-2 mb-8">
+<span class="material-symbols-outlined text-qahwah-brass text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-qahwah-brass text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-qahwah-brass text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-qahwah-brass text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-qahwah-brass text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display text-2xl md:text-3xl text-qahwah-ink/90 font-medium">
+                    Find us on Google — and leave a review.
+                </p>
+</section>
+<!-- Section 3: QR Code Card -->
+<section class="mb-12 relative flex justify-center">
+<!-- Decorative background elements behind card -->
+<div class="absolute inset-0 -m-6 border border-qahwah-brass/20 rounded-xl transform rotate-3"></div>
+<div class="absolute inset-0 -m-6 border border-qahwah-brass/20 rounded-xl transform -rotate-3"></div>
+<!-- The Premium Card -->
+<div class="bg-white p-8 md:p-10 rounded-xl shadow-[0_20px_50px_-12px_rgba(42,33,27,0.1)] relative z-10">
+<!-- Placeholder for QR Code (Stylized as high contrast) -->
+<div class="w-48 h-48 md:w-56 md:h-56 bg-qahwah-ink relative flex items-center justify-center rounded-lg overflow-hidden border border-qahwah-cream" data-alt="A high contrast, minimalist QR code graphic centered in a white frame, utilizing deep espresso black and stark white. The QR code pattern is sharp and clean, indicating scanning functionality in a modern luxury hospitality context.">
+<!-- Simulated QR Pattern using CSS grid for visual structure if image doesn't load -->
+<div class="grid grid-cols-5 grid-rows-5 gap-1 w-[80%] h-[80%] bg-white p-2">
+<div class="bg-qahwah-ink col-span-2 row-span-2 relative"><div class="absolute inset-1 bg-white"><div class="absolute inset-1 bg-qahwah-ink"></div></div></div>
+<div class="bg-transparent col-span-1 row-span-2"></div>
+<div class="bg-qahwah-ink col-span-2 row-span-2 relative"><div class="absolute inset-1 bg-white"><div class="absolute inset-1 bg-qahwah-ink"></div></div></div>
+<div class="bg-transparent col-span-2 row-span-1"></div>
+<div class="bg-qahwah-ink col-span-1 row-span-1"></div>
+<div class="bg-transparent col-span-2 row-span-1"></div>
+<div class="bg-qahwah-ink col-span-2 row-span-2 relative"><div class="absolute inset-1 bg-white"><div class="absolute inset-1 bg-qahwah-ink"></div></div></div>
+<div class="bg-transparent col-span-1 row-span-2"></div>
+<div class="bg-qahwah-ink col-span-1 row-span-1"></div>
+<div class="bg-transparent col-span-1 row-span-1"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Instruction -->
+<section class="mb-auto">
+<p class="font-label uppercase tracking-[0.2em] text-qahwah-brass text-sm md:text-base font-bold flex items-center gap-3">
+<span class="w-8 h-[1px] bg-qahwah-brass/50"></span>
+                    Scan with your camera
+                    <span class="w-8 h-[1px] bg-qahwah-brass/50"></span>
+</p>
+</section>
+<!-- Footer: Calligraphy & Location -->
+<footer class="mt-12 flex flex-col items-center w-full">
+<!-- Arabic Calligraphy "قهوة" (Coffee) in Red -->
+<div class="text-qahwah-red text-6xl md:text-7xl font-bold mb-6 font-serif opacity-90" dir="rtl">
+                    قهوة
+                </div>
+<div class="font-body text-qahwah-walnut text-sm md:text-base font-medium tracking-wide">
+                    Qahwah Drip <span class="mx-2 text-qahwah-brass">•</span> Falls Church, VA
+                </div>
+</footer>
+</div>
+</main>
+</body></html>

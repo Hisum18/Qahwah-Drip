@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qahwah Drip - Follow the Drip</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        qahwah_red: "#C4202C",
+                        brass_gold: "#B8924A",
+                        highland_green: "#2E6B43",
+                        marble_cream: "#F6F1E8",
+                        pure_linen: "#FBF8F2",
+                        walnut: "#5A3E29",
+                        camel_tan: "#B98A5E",
+                        espresso_ink: "#2A211B"
+                    },
+                    fontFamily: {
+                        headline: ["Playfair Display", "serif"],
+                        display: ["Playfair Display", "serif"],
+                        body: ["Nunito Sans", "sans-serif"],
+                        label: ["Montserrat", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'marble-texture': "url('https://images.unsplash.com/photo-1596131498642-f81516eab537?q=80&w=3000&auto=format&fit=crop')"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .mihrab-arch {
+            clip-path: path('M 0,100 L 0,1000 L 1000,1000 L 1000,100 Q 1000,0 500,0 Q 0,0 0,100 Z'); /* Simplified approximation, CSS clip-path is tricky for exact mihrab */
+            /* Better to use SVG or border-radius tricks for true mihrab in CSS alone without fixed widths */
+            border-top-left-radius: 50% 20%;
+            border-top-right-radius: 50% 20%;
+        }
+        
+        .arabesque-pattern {
+            background-color: #F6F1E8;
+            background-image: radial-gradient(#B8924A 1px, transparent 1px), radial-gradient(#B8924A 1px, #F6F1E8 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.05;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-marble_cream text-espresso_ink font-body min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
+<!-- Subtle Background Texture/Pattern -->
+<div class="absolute inset-0 arabesque-pattern pointer-events-none"></div>
+<!-- Main Poster Container -->
+<main class="relative w-full max-w-md aspect-[3/4] bg-pure_linen shadow-2xl overflow-hidden flex flex-col items-center justify-between p-8 text-center border-8 border-marble_cream ring-1 ring-brass_gold/30">
+<!-- Inner Mihrab Frame (Simulated with borders and radius) -->
+<div class="absolute inset-4 border-2 border-brass_gold/50 rounded-t-[150px] pointer-events-none"></div>
+<div class="absolute inset-[18px] border-[1px] border-qahwah_red/20 rounded-t-[148px] pointer-events-none"></div>
+<!-- Header Content -->
+<header class="relative z-10 w-full mt-8">
+<h1 class="font-headline text-3xl font-bold text-qahwah_red italic mb-8">Qahwah Drip</h1>
+<div class="space-y-4 max-w-xs mx-auto">
+<h2 class="font-headline text-5xl md:text-6xl text-espresso_ink leading-tight tracking-tight">
+                    Follow<br/>
+<span class="italic text-qahwah_red">the Drip</span>
+</h2>
+<div class="w-12 h-0.5 bg-brass_gold mx-auto my-6"></div>
+<p class="font-body text-espresso_ink/80 text-sm md:text-base leading-relaxed px-4">
+                    Discover our latest seasonal drinks, artisanal desserts, and daily specials straight from the highlands.
+                </p>
+</div>
+</header>
+<!-- QR Code Area -->
+<div class="relative z-10 w-full flex flex-col items-center my-8">
+<p class="font-headline italic text-espresso_ink/70 mb-4 text-lg">Scan to follow</p>
+<div class="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-marble_cream relative group transition-transform duration-300 hover:scale-105">
+<!-- Placeholder for actual QR code image -->
+<div class="w-48 h-48 bg-gray-100 rounded flex items-center justify-center overflow-hidden">
+<img alt="QR Code" class="w-full h-full object-cover opacity-80" data-alt="A high contrast, scannable QR code centered perfectly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdEWQUWZKeAHgidm7bGBhHDCDFLJo4CwqLR1T7Tna5UZdP1ShW7gGfqFqsGL28zW-qbEIE8Id_pE-MlX0WmabiCG_Do67TFFmnWKUkF-Z6O9Mkiu_YnUeIm6ELkf4dEGyLpFnGl23mgtqxICsypGTmWFCUkYCfIffmoRgrWuQ1l72fSZmcLaWW-Bef8O4v0gMoGhM0XJeGXH5CJz8RlhvH6yoNwSXU59qDtAWLjcv_IxrGPKIdR1aO18QMcM49Dt43aof_zAqtfo0"/>
+</div>
+<!-- Decorative corners -->
+<div class="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-brass_gold"></div>
+<div class="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-brass_gold"></div>
+<div class="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-brass_gold"></div>
+<div class="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-brass_gold"></div>
+</div>
+<!-- Social Handle -->
+<div class="flex items-center gap-2 mt-6 text-qahwah_red font-label tracking-widest text-sm font-semibold">
+<!-- Using a generic share icon as substitute for instagram if specific svg is not available -->
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span>@QAHWAHDRIP</span>
+</div>
+</div>
+<!-- Footer Area -->
+<footer class="relative z-10 w-full flex flex-col items-center pb-4">
+<div class="flex items-center justify-center gap-4 text-xs font-label uppercase tracking-[0.2em] text-espresso_ink/60">
+<span class="w-8 h-[1px] bg-brass_gold/50"></span>
+<span>Falls Church, VA</span>
+<span class="w-8 h-[1px] bg-brass_gold/50"></span>
+</div>
+<!-- Arabic text for 'Coffee' -->
+<div class="mt-4 font-headline text-2xl text-qahwah_red/40" dir="rtl">
+                قهوة
+            </div>
+</footer>
+</main>
+</body></html>
