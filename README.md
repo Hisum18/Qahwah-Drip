@@ -31,7 +31,8 @@ Defined in `site/public/css/styles.css` (`:root`) and mirrored in `.stitch/DESIG
 ## Photos
 Real café photos live in `site/public/images/` with content-accurate names
 (e.g. `iced-latte.jpg`, `qahwah-cups.jpg`, `mountain-mural.jpg`, `exterior-mural.jpg`).
-Spares not currently placed: `arches-day.jpg`, `interior-wide.jpg`, `hallway.jpg`.
+Social share crops (1200×630) are `og-cover/og-menu/og-story/og-visit.jpg`.
+Spares not currently placed: `interior-wide.jpg`, `hallway.jpg`, and extra drink/dessert variants.
 
 ## Real business details (from the Google Business Profile)
 - **Qahwah Drip** — authentic Yemeni coffee, Falls Church, VA (serving the greater DMV)
@@ -55,8 +56,26 @@ Spares not currently placed: `arches-day.jpg`, `interior-wide.jpg`, `hallway.jpg
 - For a more reliable map, swap the `output=embed` iframe for the official
   [Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) with a key.
 
+## SEO & AI discoverability
+Live domain: **https://qahwahdrip.com** — baked into every canonical / Open Graph / sitemap /
+JSON-LD URL. If the domain changes, find-and-replace `qahwahdrip.com` across `site/public/`.
+- **Per page:** unique title + meta description, `<link rel="canonical">`, Open Graph + Twitter
+  cards (1200×630 share images `og-cover/og-menu/og-story/og-visit.jpg`), `theme-color`, geo meta.
+- **JSON-LD** `CafeOrCoffeeShop` on every page (one consistent `@id`) with address, geo, phone,
+  opening hours, cuisine, price range, `hasMenu`, Instagram; **5.0 aggregateRating + the 3 visible
+  reviews on Home**; `BreadcrumbList` on inner pages.
+- `sitemap.xml` (with image entries), `robots.txt` that welcomes search engines **and** AI crawlers
+  (GPTBot, ClaudeBot, anthropic-ai, PerplexityBot, Google-Extended, OAI-SearchBot, CCBot,
+  Applebot-Extended…), `llms.txt` (LLM-readable summary), `site.webmanifest` + app icons.
+- Validated by a multi-agent SEO audit; 8 findings fixed (review-text parity, boolean
+  `acceptsReservations`, one consistent business entity, midnight `24:00` hours, OG image
+  dimensions, `twitter:image:alt`, non-future sitemap dates).
+- **After launch:** verify the domain in Google Search Console & Bing Webmaster Tools and submit
+  `sitemap.xml`. (Hours in the structured data mirror the *sample* hours — update with real ones.)
+
 ## Stitch
 A Stitch project (`projects/9884155938146638313`) and a matching design system
-(`assets/4599896844612736105`, "Qahwah Drip — Heritage") were created. Stitch's
-screen generator was timing out without producing screens, so the site was hand-built
-to the same design system. Project metadata is in `.stitch/`.
+(`assets/4599896844612736105`, "Qahwah Drip — Heritage") were created. Stitch's generator
+initially timed out on long desktop prompts, so the site was hand-built to the same design
+system. It now works with model `GEMINI_3_1_PRO` + a concise prompt — a sample mobile concept
+is saved in `.stitch/designs/`. Project metadata is in `.stitch/`.

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://qahwahdrip.com/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://qahwahdrip.com/images/exterior-mural.jpg</image:loc></image:image>
+    <image:image><image:loc>https://qahwahdrip.com/images/new-latte.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://qahwahdrip.com/menu.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://qahwahdrip.com/images/menu-banner.jpg</image:loc></image:image>
+    <image:image><image:loc>https://qahwahdrip.com/images/dessert-spread.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://qahwahdrip.com/story.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://qahwahdrip.com/images/mountain-mural.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://qahwahdrip.com/visit.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://qahwahdrip.com/images/storefront-sign.jpg</image:loc></image:image>
+  </url>
+</urlset>
