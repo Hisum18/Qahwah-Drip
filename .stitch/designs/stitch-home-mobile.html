@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qahwah Drip - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Nunito+Sans:wght@300;400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Public+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        qahwah: {
+                            red: '#C4202C',
+                            brass: '#B8924A',
+                            green: '#2E6B43',
+                            cream: '#F6F1E8',
+                            linen: '#FBF8F2',
+                            walnut: '#5A3E29',
+                            camel: '#B98A5E',
+                            ink: '#2A211B'
+                        }
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "arch": "50% 50% 0 0 / 100% 100% 0 0"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Playfair Display", "serif"],
+                        "body": ["Nunito Sans", "sans-serif"],
+                        "label": ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F6F1E8;
+            color: #2A211B;
+        }
+        .bg-pattern-lattice {
+            background-image: radial-gradient(#B8924A 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+        /* Custom Islamic Arch shape */
+        .arch-frame {
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="font-body antialiased flex flex-col min-h-screen relative pb-[70px]">
+<!-- Top App Bar -->
+<header class="bg-[#F6F1E8] dark:bg-[#2A211B] w-full top-0 sticky border-b border-[#B8924A]/20 shadow-sm z-40">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<button aria-label="Menu" class="text-[#2A211B] dark:text-[#F6F1E8] hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<h1 class="font-headline text-[#C4202C] text-xl font-bold uppercase tracking-widest text-center flex-1">Qahwah Drip</h1>
+<button aria-label="Profile" class="text-[#2A211B] dark:text-[#F6F1E8] hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full max-w-[1200px] mx-auto pb-10">
+<!-- Hero Section -->
+<section class="relative w-full px-4 pt-6 pb-12 flex flex-col items-center">
+<!-- Background Motif -->
+<div class="absolute inset-0 bg-pattern-lattice pointer-events-none z-0"></div>
+<!-- Architectural Frame for Hero Image -->
+<div class="relative z-10 w-full max-w-md mx-auto arch-frame border-2 border-qahwah-brass/30 p-1 bg-qahwah-cream shadow-xl mb-8">
+<div class="arch-frame overflow-hidden relative aspect-[3/4] w-full bg-qahwah-ink">
+<img alt="Pouring Qahwah" class="w-full h-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105" data-alt="A close-up shot of a traditional brass dallah (coffee pot) pouring steaming, rich amber-colored Yemeni qahwah into a delicate glass cup. The setting is a bright, marble-topped table with intricate brass inlay edges. Soft, warm sunlight streams from a window on the left, highlighting the steam and the golden hues of the brass. Beside the cup, small brass bowls hold dates and green cardamom pods. The mood is highly premium, authentic, and inviting." src="https://lh3.googleusercontent.com/aida/AP1WRLvZhVreNhuzkkDpr6F7z1lD9NYJr9lc7g70HztkxVwcs_UyLFOqbNs5ICaWWJkFEKc90oSnc7QON3sXH0txLKprNKQsqYYJGvmND0oNQKThe7xhfhf8A3ZW6OlFoPuYNYqF3IAbtZz_dLkAQilCwoc7eJGsdLJ142wFdnLWLffqa7sStAxR3LttAca9hx9jAUVUl_qLSDugy0E8JNa1WiMQ6kjeTEdIUgGyT2HuKKmsnU1MQMxShZonGkg"/>
+<!-- Subtle gradient overlay to anchor the image -->
+<div class="absolute inset-0 bg-gradient-to-t from-qahwah-ink/60 via-transparent to-transparent pointer-events-none"></div>
+</div>
+</div>
+<!-- Typography & CTAs -->
+<div class="relative z-20 text-center px-4 max-w-lg mx-auto flex flex-col items-center">
+<div class="mb-4 flex items-center justify-center space-x-2 text-qahwah-brass">
+<span class="h-px w-8 bg-qahwah-brass block"></span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="h-px w-8 bg-qahwah-brass block"></span>
+</div>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-qahwah-ink mb-4 leading-tight">
+                    From the Highlands of Yemen to Your Cup.
+                </h2>
+<p class="font-body text-lg text-qahwah-ink/80 mb-8 max-w-sm mx-auto">
+                    Experience the soul of authentic Qahwah and specialty coffee, crafted with centuries of heritage.
+                </p>
+<div class="flex flex-col w-full space-y-4 px-6">
+<a class="w-full bg-[#C4202C] text-[#F6F1E8] font-label font-bold uppercase tracking-wider py-4 rounded-full shadow-md hover:bg-[#a01a24] hover:-translate-y-0.5 transition-all active:scale-95 text-center flex items-center justify-center gap-2" href="#">
+<span>View Menu</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="w-full bg-transparent border-2 border-qahwah-brass text-qahwah-ink font-label font-bold uppercase tracking-wider py-4 rounded-full hover:bg-qahwah-brass/10 transition-colors active:scale-95 text-center" href="#">
+                        Our Heritage
+                    </a>
+</div>
+</div>
+</section>
+<!-- Featured Section (Bento Grid Style) -->
+<section class="px-4 py-8 relative z-10 max-w-lg mx-auto">
+<div class="grid grid-cols-2 gap-4">
+<!-- Card 1: Beans -->
+<div class="bg-qahwah-linen rounded-xl p-5 border border-qahwah-brass/20 shadow-sm flex flex-col justify-between aspect-square group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="text-qahwah-brass mb-2">
+<span class="material-symbols-outlined text-3xl">coffee_maker</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-qahwah-ink mb-1">Single Origin</h3>
+<p class="text-xs text-qahwah-ink/70 font-body">Haraz Mountains</p>
+</div>
+</div>
+<!-- Card 2: Reserve -->
+<div class="bg-qahwah-walnut rounded-xl p-5 shadow-md flex flex-col justify-between aspect-square relative overflow-hidden group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">local_cafe</span>
+</div>
+<div class="text-qahwah-cream mb-2 relative z-10">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-qahwah-cream mb-1">Reserve</h3>
+<p class="text-xs text-qahwah-cream/70 font-body">Limited Roasts</p>
+</div>
+</div>
+<!-- Card 3: Wide Banner -->
+<div class="col-span-2 bg-qahwah-linen rounded-xl p-5 border border-qahwah-brass/20 shadow-sm flex items-center justify-between group hover:-translate-y-1 transition-transform cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-qahwah-cream border border-qahwah-brass/30 flex items-center justify-center text-qahwah-red">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-qahwah-ink">Visit the Café</h3>
+<p class="text-xs text-qahwah-ink/70 font-body">Find your nearest sanctuary</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-qahwah-brass">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="bg-[#F6F1E8] dark:bg-[#2A211B] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe border-t border-[#B8924A]/30 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] md:hidden">
+<!-- Active: Home -->
+<a class="flex flex-col items-center justify-center text-[#C4202C] font-bold hover:text-[#C4202C] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label text-[10px] uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Inactive: Menu -->
+<a class="flex flex-col items-center justify-center text-[#B98A5E] dark:text-[#B8924A] hover:text-[#C4202C] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">coffee</span>
+<span class="font-label text-[10px] uppercase tracking-wider mt-1">Menu</span>
+</a>
+<!-- Inactive: Orders -->
+<a class="flex flex-col items-center justify-center text-[#B98A5E] dark:text-[#B8924A] hover:text-[#C4202C] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label text-[10px] uppercase tracking-wider mt-1">Orders</span>
+</a>
+<!-- Inactive: Heritage -->
+<a class="flex flex-col items-center justify-center text-[#B98A5E] dark:text-[#B8924A] hover:text-[#C4202C] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-label text-[10px] uppercase tracking-wider mt-1">Heritage</span>
+</a>
+</nav>
+<!-- Footer (Only visible on larger screens where BottomNav might be hidden via media queries in a full implementation, included for completeness per JSON, but pushed down) -->
+<footer class="bg-[#5A3E29] dark:bg-[#1A1512] w-full mt-auto border-t-2 border-[#B8924A] w-full px-8 py-12 flex flex-col items-center text-center space-y-4 mb-20 hidden md:flex">
+<h2 class="font-headline text-[#B8924A] italic text-xl">Qahwah Drip</h2>
+<div class="flex gap-6">
+<a class="font-body text-xs text-[#F6F1E8]/80 hover:text-[#B8924A] transition-colors" href="#">Our Story</a>
+<a class="font-body text-xs text-[#F6F1E8]/80 hover:text-[#B8924A] transition-colors" href="#">Sustainability</a>
+<a class="font-body text-xs text-[#F6F1E8]/80 hover:text-[#B8924A] transition-colors" href="#">Locations</a>
+</div>
+<p class="font-body text-xs text-[#F6F1E8]/80 mt-4">© 2024 Qahwah Drip — From the highlands of Yemen to your cup.</p>
+</footer>
+</body></html>
