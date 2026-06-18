@@ -1,0 +1,21 @@
+{
+  "name": "projects/9884155938146638313",
+  "projectId": "9884155938146638313",
+  "title": "Qahwah Drip",
+  "visibility": "PRIVATE",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designSystemId": "assets/4599896844612736105",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "headlineFont": "PLAYFAIR_DISPLAY",
+    "bodyFont": "NUNITO_SANS",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#C4202C"
+  },
+  "screens": {},
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}
