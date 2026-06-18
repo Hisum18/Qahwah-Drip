@@ -367,7 +367,7 @@ a.map__placeholder:hover .textlink { color: var(--red-deep); }
 @media (max-width: 820px) {
   .nav__toggle { display:block; z-index:120; }
   .nav__links {
-    position: fixed; inset: 0 0 0 auto; width: min(78vw, 340px);
+    position: fixed; top: 0; right: 0; height: 100vh; height: 100dvh; width: min(78vw, 340px);
     background: var(--walnut-2); flex-direction: column; justify-content:center;
     padding: 3rem; gap: 1.6rem; transform: translateX(100%); visibility: hidden;
     transition: transform .35s ease, visibility .35s ease;
@@ -378,6 +378,12 @@ a.map__placeholder:hover .textlink { color: var(--red-deep); }
   .nav .btn { display:none; }
   .nav-scrim { display:block; position:fixed; inset:0; background:rgba(20,13,8,.5); z-index:90; opacity:0; pointer-events:none; transition:opacity .35s ease; }
   body.nav-open .nav-scrim { opacity:1; pointer-events:auto; }
+  /* keep the toggle visible on the dark drawer and morph it into a clear X */
+  body.nav-open .nav__toggle span,
+  body.nav-open .site-header.is-solid .nav__toggle span { background:#fff; }
+  body.nav-open .nav__toggle span:nth-child(1){ transform: translateY(10px) rotate(45deg); }
+  body.nav-open .nav__toggle span:nth-child(2){ opacity:0; }
+  body.nav-open .nav__toggle span:nth-child(3){ transform: translateY(-10px) rotate(-45deg); }
   .cards { grid-template-columns: 1fr; max-width: 420px; margin-inline:auto; }
   .split { grid-template-columns: 1fr; }
   .split--reverse .split__media { order: 0; }
