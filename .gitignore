@@ -1,2 +1,13 @@
+# macOS
 .DS_Store
+
+# Logs
 *.log
+
+# Dependencies / tooling
+node_modules/
+.netlify/
+
+# Editors
+.vscode/
+.idea/
