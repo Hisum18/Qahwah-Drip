@@ -318,6 +318,7 @@ p  { color: var(--ink-soft); }
 .addon-note { text-align:center; margin-top:1.4rem; font-family:var(--label); font-weight:700; letter-spacing:.04em; color:var(--ink-soft); font-size:.85rem; }
 .milk-note { display:block; width:max-content; max-width:100%; margin:1.6rem auto 0; padding:.7rem 1.4rem; border:1px solid var(--brass); border-radius:999px; background:var(--linen); text-align:center; font-family:var(--label); font-weight:700; letter-spacing:.03em; color:var(--ink); font-size:.85rem; }
 .milk-note strong { color:var(--red); }
+.iced { color:#5aa7d8; font-size:.85em; margin-left:.25em; }
 
 .specialty { display:grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(1.5rem,4vw,3.5rem); align-items:center; background: var(--linen); border:1px solid var(--line); border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-sm); }
 .specialty img { width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; }
