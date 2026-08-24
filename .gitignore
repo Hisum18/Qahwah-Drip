@@ -11,4 +11,6 @@ node_modules/
 # Editors
 .vscode/
 .idea/
-.claude/
+
+# Claude Code — share project config, keep personal/local settings out
+.claude/settings.local.json
