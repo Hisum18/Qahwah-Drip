@@ -6,7 +6,7 @@ using the café's real photography and a custom heritage design system.
 
 ## Pages
 - `site/public/index.html` — Home (hero, signature drinks, heritage teaser, space gallery)
-- `site/public/menu.html` — Menu (qahwah, espresso, teas, cold, desserts)
+- `site/public/menu.html` — Menu (espresso, specialty, coffee, matcha, tea, refreshers, caffeine-free, sweets, add-ons)
 - `site/public/story.html` — Our Story (Yemeni coffee heritage)
 - `site/public/visit.html` — Visit (hours, location, contact form)
 
@@ -47,8 +47,8 @@ Spares not currently placed: `interior-wide.jpg`, `hallway.jpg`, and extra drink
   clickable "Open in Google Maps" fallback if the embed is blocked.
 
 ## Still to finalize before/at launch
-- **Hours** — ⚠️ SAMPLE/ESTIMATED (Google has none published). Currently Mon–Thu 8am–11pm,
-  Fri–Sat 8am–12am, Sun 9am–11pm. Send me your real hours and I'll drop them in everywhere.
+- **Hours** — ⚠️ SAMPLE/ESTIMATED (Google has none published). Currently Mon–Thu 9am–11pm,
+  Fri–Sat 9am–12am, Sun 9am–11pm. Send me your real hours and I'll drop them in everywhere.
 - **Menu items & prices** — authentic Yemeni items with *sample* prices; confirm final menu.
 - **Other socials** — only Instagram is wired (the one you promote). Send Facebook/TikTok
   URLs to add them.
