@@ -47,8 +47,8 @@ Spares not currently placed: `interior-wide.jpg`, `hallway.jpg`, and extra drink
   clickable "Open in Google Maps" fallback if the embed is blocked.
 
 ## Still to finalize before/at launch
-- **Hours** — ⚠️ SAMPLE/ESTIMATED (Google has none published). Currently Mon–Thu 9am–11pm,
-  Fri–Sat 9am–12am, Sun 9am–11pm. Send me your real hours and I'll drop them in everywhere.
+- **Hours** — ✅ CONFIRMED. Mon–Thu 9am–11pm, Fri–Sat 9am–12am, Sun 9am–11pm (live across every
+  page and the JSON-LD structured data).
 - **Menu items & prices** — authentic Yemeni items with *sample* prices; confirm final menu.
 - **Other socials** — only Instagram is wired (the one you promote). Send Facebook/TikTok
   URLs to add them.
@@ -71,7 +71,7 @@ JSON-LD URL. If the domain changes, find-and-replace `qahwahdrip.com` across `si
   `acceptsReservations`, one consistent business entity, midnight `24:00` hours, OG image
   dimensions, `twitter:image:alt`, non-future sitemap dates).
 - **After launch:** verify the domain in Google Search Console & Bing Webmaster Tools and submit
-  `sitemap.xml`. (Hours in the structured data mirror the *sample* hours — update with real ones.)
+  `sitemap.xml`. (Hours in the structured data match the confirmed hours.)
 
 ## Stitch
 A Stitch project (`projects/9884155938146638313`) and a matching design system
